@@ -1,0 +1,109 @@
+/**Général**/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 1440px;
+    background-color: blanchedalmond;
+    margin: 0;
+    border: solid 2px black;
+}
+
+
+.direction-row {
+    display:flex;
+    flex-direction: row;
+}
+
+
+/**Header**/
+
+#logo {
+    width: 10rem;
+}
+
+header {
+    display:flex;
+    flex-direction: row;
+
+}
+
+header ul {
+    display:flex;
+    flex-direction: row;
+}
+
+ul li {
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 1rem;
+}
+
+ul li:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+/**Aside**/
+
+aside {
+    margin-top: 1.5rem;
+}
+
+
+/**Section 1**/
+
+#section-1 {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ligne-de-photo {
+    display:flex;
+    justify-content: space-around;
+
+}
+
+#hébergements-à-marseille img {
+    width: 256px;
+}
+
+#hébergements-à-marseille {
+    width: 70%;
+}
+
+#les-plus-populaires img{
+    width: 256px;
+}
+
+
+/**Section 2**/
+
+#section-2 {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 2;
+
+}
+
+#photos-activites {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#photos-activites img {
+    width: 256px;
+}
+
+
+/**Footer**/
+
+footer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
