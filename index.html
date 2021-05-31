@@ -6,36 +6,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--important !-->
     <meta name="description" content="blablabla"> <!--référencement-->
+    <script src="https://kit.fontawesome.com/97fc7ada29.js" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="style.css">
     <title>Projet 2 - Riserva</title>
-    <script src="https://kit.fontawesome.com/97fc7ada29.js" crossorigin="anonymous"></script>
+    
 </head>
 
 
 <body>
 
     <header>
-            <img id=logo src="images/logo/Reservia@3x.png" alt="logo-riserva">
-            
-            <nav>
-                <ul>
-                    <li><a href="#">Hébergement</a></li>
-                    <li><a href="#">Activités</a></li>
-                    <li><a href="#">S'inscrire</a></li>
-                </ul>
-            </nav>
+
+        <img id="one" src="images/logo/Reservia@3x.png" alt="logo-riserva"></div>
+
+        <ul>
+            <li><a id="two" href="#">S'inscrire</a></li>
+            <li><a id="three" href="#">Activités</a></li>
+            <li><a id="four"href="#">Hébergement</a></li>               
+        </ul>
     </header>
 
-    <section>
+    
+    <section id="acceuil">
 
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1><br>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en plein nature</p>
 
             <form>  </form>
 
-            <div>Filtres</div>
+            <div id="filtres">Filtres</div>
 
-            <div class=direction-row>
+            <div id="bouttons">
                 <button><i class="fas fa-money-bill-wave"></i>Économique</button>
                 <button><i class="fas fa-user-alt"></i>Familial</button>
                 <button><i class="fas fa-heart"></i>Romantique</button>
@@ -51,11 +52,10 @@
     <section id=section-1>
             
 
-        <div id="hébergements-à-marseille">
+        <div id="hebergements">
                 
             <h2>Hébergements à Marseille</h2>
-                
-                <div class="ligne-de-photo">
+
                     <figure>
                         <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                             alt="Auberge la Cannebière">
@@ -160,7 +160,7 @@
         </div>
 
 
-        <div id="les-plus-populaires">
+        <div id="populaires">
 
             <h2>Les plus populaires</h2>
 
@@ -220,10 +220,7 @@
     <section id="section-2">
 
             <h2>Activités à Marseille</h2>
-
-            <!--css grid-->
             
-                <div id=photos-activites>
                     <figure>
                         <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                             alt="Auberge la cannebiere">
@@ -266,14 +263,12 @@
     </section>
 
     <footer>
-
-        <!--liste / liens-->
                 
                 <ul>
                     <h3>A propos</h3>
-                     <li><a href="#">Hébergement</a></li>
-                    <li><a href="#">Activités</a></li>
-                    <li><a href="#">S'inscrire</a></li>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de ventes</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
                 </ul>
 
                 <ul>
