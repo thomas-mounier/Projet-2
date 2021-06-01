@@ -12,38 +12,72 @@ body, html {
     justify-content: center;
 }
 
-img {
-    width:100%;
-}
-
 h2{
     text-align:center;
 }
+
+img {
+    width: 100%;
+}
+
+
 /** HEADER **/
 
 header{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#one{
-    grid-column: 1/2;
-    grid-row: 1/2;
+header img{
+    width: 110px;
+    margin: 20px 0 0 20px;
 }
 
-#two{
-    grid-column: 2/2;
-    grid-row: 1/2;
+nav{
+    width: 100%;
 }
 
-#three{
-    grid-column: 1/2;
-    grid-row: 2/2;
+header nav ul{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    margin-top: -65px;
+    padding: 0;
+    list-style-type: none;
 }
 
-#four{
-    grid-column: 2/2;
-    grid-row: 2/2;
+header nav ul li{
+    width: 50%;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 3px solid #f2f2f2;
+}
+
+header nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+#inscrire{
+    order: 3;
+    text-align: right;
+    margin-right: 20px;
+    border: none;
+    padding: 30px 0;;
+}
+
+#inscrire a{
+    color: #0065fc;
+    font-weight: bolder;
+}
+
+#activites{
+    order: 1;
+}
+
+#hebergement{
+    order: 2;
 }
 
 
@@ -64,25 +98,39 @@ h1{
     margin:0;
 }
 
-#acceuil button{
-    border: 2px solid #e6e6e6;
+#bouttons button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
     background-color: white;
-    padding: 0px 12px 0px 0px;
-    border-radius: 30px 30px 30px 30px;
-    margin: 5px 5px 5px 0;
+    border: none;
 }
 
-#acceuil i{
+.icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
     border-radius: 30px;
-    padding: 10px;
     background-color: #deebff;
-    color: #0065fc;
-    margin: 0 8px 0 0;
 }
 
-#bouttons{
-    margin-bottom: 15px;
+.text_btn{
+    text-align: right;
+    vertical-align: center;
+    
+    width: 140px;
+    height: 25px;
+    border: 2px solid #deebff;
+    border-radius: 20px;
+    padding-top: 11px;
+    padding-right: 5px;
+    margin-left: -30px;
 }
+
 
 #filtres{
     margin: 20px 0px 5px 0;
