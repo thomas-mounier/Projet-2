@@ -35,9 +35,14 @@ body, html {
 }
 
 h2{
-    text-align:center;
+    margin: 0;
+    font-size: 22px;
+    font-family: raleway_extra_bold;
 }
 
+img{
+    width: 100%;
+}
 
 
 
@@ -54,11 +59,60 @@ h2{
 
 /** HEBERGEMENTS [SECTION-1] **/
 
+#hebergements{
+    padding: 20px;
+}
 
+#hebergements h2{
+    margin: 20px 0;
+}
+
+#hebergements figure{
+    background-color: white;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+#hebergements figure img{
+    object-fit: cover;
+    height: 134px;
+    width: 100%;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+#hebergements figure figcaption{
+    padding-bottom: 10px;
+}
+
+#hebergements figure figcaption h4{
+    margin: 0px 0 3px 12px;
+    font-family: raleway_extra_bold;
+}
+
+#hebergements figure figcaption p{
+    margin: 0 0 3px 12px;
+    font-size: 13px;
+}
+
+#hebergements figure figcaption div{
+    font-size: 11px;
+    color:#0065fc;
+    margin-left: 12px;
+}
 
 
 /** LES PLUS POPULAIRES [SECTION-1] **/
 
+#titre_et_icone{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    margin: 20px;
+}
 
 #populaires{
     width: 100%;
@@ -66,14 +120,8 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
 
+    padding: 20px 0;
     background-color: #f2f2f2;
-}
-
-#populaires h2{
-    margin: 0;
-    font-size: 16px;
-    font-family: raleway_extra_bold;
-    justify-self: left;
 }
 
 #populaires figure{
@@ -81,19 +129,13 @@ h2{
     flex-flow: row wrap;
     align-items: center;
 
-    margin: 5px 0;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    margin: 5px 20px;
     height: 134px;
-    width: 100%-40px;
-    padding: 4px;
+    width: 100%;
+    padding: 5px;
     border-radius: 12px;
     background-color: white;
-}
-
-#populaires figure figcaption{
-    display: flex;
-    flex-flow: column wrap;
-
-    height: 134px;
 }
 
 #populaires figure img{
@@ -104,18 +146,25 @@ h2{
     border-bottom-left-radius: 12px;
 }
 
-#populaires figure h4{
+#populaires figure figcaption{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+    justify-content: space-around;
 
+    width: 40%;
+    height: 134px;
+    margin: 0px 0 0px 10px;
+}
+
+
+#populaires figure h4{
+    flex-shrink: initial;
     margin: 0px 0px 0px 0px;
     font-family: raleway_extra_bold;
-
-
 }
 
 #populaires figure p{
-    margin: 0px 0px;
+    margin: 0px 0px 15px 0;
     font-size: 13px;
 }
 
@@ -130,6 +179,8 @@ h2{
     font-size: 11px;
     margin: 0px 0px 0px 0px;
 }
+
+
 
 
 
@@ -189,11 +240,42 @@ header nav ul li a{
     order: 1;
 }
 
-#hebergement{
+#hebergement_header{
     order: 2;
 }
 
 
+
+
+/** SECTION ACTIVITES [SECTION 2] **/
+
+#section-2{
+    padding: 20px;
+}
+
+#section-2 figure{
+    margin: 0;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+#section-2 figure img{
+    object-fit: cover;
+    height: 134px;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#section-2 figure figcaption{
+    padding-bottom: 15px;
+}
+
+#section-2 figure figcaption h4{
+    margin: 15px 0 0px 12px;
+    font-family: raleway_extra_bold;
+}
 
 
 /** SECTION ACCEUIL **/
