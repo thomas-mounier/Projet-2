@@ -92,6 +92,7 @@ header nav ul li a{
 #inscrire a{
     color: #0065fc;
     font-weight: bolder;
+    margin: 10px 0;
 }
 
 #activites{
@@ -164,8 +165,7 @@ header nav ul li a{
 
 #hebergements figure img{
     object-fit: cover;
-    height: 134px;
-    width: calc(100%-10px);
+    height: 128px;
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
     margin: 5px;
@@ -320,6 +320,7 @@ header nav ul li a{
 }
 
 .acceuil h3{
+    margin-right: 20px;
     font-size: 16px;
     font-family: raleway_extra_bold;
 }
@@ -430,8 +431,14 @@ footer ul li a{
 }
 
 
+
+
+/**BREAK POINTS**/
+
+
 @media (min-width: 640px) {
 
+/**SECTION-1 ~ 640px**/
 #populaires, #hebergements {
     display: flex;
     flex-flow: row wrap;
@@ -440,6 +447,7 @@ footer ul li a{
     padding: 0px;
 }
 
+/**SECTION-2 ~ 640px**/
 #section-2, footer{
     display: flex;
     flex-wrap: wrap;
@@ -452,16 +460,6 @@ footer ul li a{
 #section-2 figure{
     width: 44%;
     margin: 0px 0 20px 0px;
-}
-
-footer ul {
-    text-align: center;
-    width: 33%;
-    margin: 0;
-}
-
-footer ul h3{
-    margin-top: 20px;
 }
 
 #hebergements h2, #section-2 h2{
@@ -477,28 +475,115 @@ footer ul h3{
     margin: 0px 0 20px 30px;
 }
 
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/**FOOTER ~ 640px**/
 footer {
     margin-top: 20px;
 }
 
+footer ul {
+    text-align: center;
+    width: 33%;
+    margin: 0;
 }
+
+footer ul h3{
+    margin-top: 20px;
+}}
+
 
 
 @media (min-width: 1024px) {
 
 #populaires figure, #hebergements figure, 
 #section-2 figure{
-    width: 30%;
+    width: 29%;
 }
 
+/**HEADER ~1024px**/
+header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
+header img{
+    width: 120px;
+    margin: 40px 0 0 40px;
+}
+
+nav{
+    width: 100%;
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0;
+    list-style-type: none;
+    margin-top: -95px;
+    margin-bottom: -50px;
+}
+
+header nav ul li{
+    width: 10%;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: none;
+    border-top: 3px solid white;
+}
+
+header nav ul li:hover{
+    border-top: 3px solid #0065fc;
+}
+
+header nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+#inscrire{
+    order: 3;
+    text-align: center;
+    border: none;
+    padding: 40px 0;
+}
+
+#activites{
+    order: 1;
+}
+
+#hebergement_header{
+    order: 2;
+}}
+
+/**ACCEUIL ~ 1024px**/
+
+.acceuil, aside{
+    margin-left: 40px;
+}
+
+.filtres{
+    margin-top: 20px;
+}
 
 @media (min-width: 1280px) {
 
+/**SECTION-1 ~ 1280px**/
 #section-1{
     display: flex;
     flex-direction: row;
+    margin-bottom: 30px;
 }
 
 #populaires{
@@ -508,11 +593,12 @@ footer {
 
     width: 33%;
     margin-right: 40px;
-    border-radius: 12px;
+    border-radius: 20px;
 }
 
 #titre_et_icone{
-    margin: 10px 40px;
+    height: 26px;
+    margin: 40px 40px 0 40px;
 }
 
 #populaires figure{
@@ -524,17 +610,89 @@ footer {
 
 #hebergements{
     width: 67%;
+    margin: 0 40px ;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#hebergements a p{
+    margin: 20px 0 20px 20px;
 }
 
 #hebergements figure img{
-    height: 150px;
+    height: 115px;
 }
 
-#hebergements a p {
-    margin:0
+/**SECTION-2 ~ 1280px**/
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(11, 40px);
+    column-gap: 40px;
+
+    padding: 0 40px;
 }
 
-
-
-
+#section-2 figure{
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+#section-2 figure figcaption{
+    margin: 0px;
+    padding:0;
+}
+
+#section-2 figure figcaption h4{
+    margin: 15px 20px 20px 20px;
+    padding:0;
+}
+
+.a{
+    grid-row: 1 / span 11;
+}
+
+.b{
+    grid-row: 1 / span 6;
+}
+
+.c{
+    grid-row: 8 / span 4;
+}
+
+.d{
+    grid-row: 1 / span 11;
+}
+
+.e{
+    grid-row: 1 / span 5;
+}
+
+.f{
+    grid-row: 7 / span 5;
+}
+
+.a img, .d img{
+    height: 380px !important;
+}
+
+.b img{
+    height: 180px !important;
+}
+
+.c img{
+    height: 100px !important;
+}
+
+.e img, .f img{
+    height: 140px !important;
+}
+
+/**FOOTER ~ 1280px**/
+footer ul {
+    text-align: left;
+    width: 28%;
+    margin: 30px 0;
+}}
