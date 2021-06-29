@@ -30,7 +30,7 @@ body, html {
     height: 100%;
     margin:0;
     padding:0;
-    font-family: raleway,sans-serif;
+    font-family: raleway, sans-serif;
     justify-content: center;
 }
 
@@ -114,6 +114,165 @@ header nav ul li a{
 
 #hebergements_header a{
     color: #0065fc;
+}
+
+
+
+
+/** SECTION ACCEUIL **/
+
+.acceuil{
+    margin: 0 20px 0 20px;
+}
+
+.acceuil p{
+    width:85%;
+    margin:0;
+}
+
+.acceuil h1{
+    font-size: 20px;
+    width: 85%;
+    margin: 0 0 10px 0;
+}
+
+.acceuil h3{
+    margin-right: 35px;
+    font-size: 16px;
+    font-family: raleway_extra_bold;
+}
+
+.filtres{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0px;
+    height: 45px;
+    border: 2px solid #e6e6e6;
+    background-color: white;
+    border-radius: 45px;
+    margin: 0px 25px 10px 0px;
+    font-family: raleway_bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #e6e6e6;
+}
+
+.rond_bleu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    background-color: #deebff;
+    z-index: 1;
+    margin-left: -2px;
+    color: #0065fc;
+    font-size: 16px;
+}
+
+.texte_filtre{
+    margin: 0px 14px 0px 12px;
+    font-size: 16px;
+}
+
+
+
+
+/** FORMULAIRE [SECTION-ACCEUIL] **/
+
+
+form{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.carre_gris{
+    display: flex;
+    justify-content: center;
+
+    height: 40px;
+    width: 40px;
+    background-color: #f2f2f2;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.carre_loupe{
+    display: flex;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    background-color: #0065fc;
+    border-radius: 10px;
+    margin-left: -7px;
+
+}
+
+input{
+    height: 36px;
+    width: 62%;
+    border: solid 1px #fbfbfb;
+    padding-left: 14px;
+    font-family: raleway_bold;
+    font-size: 16px;
+}
+
+.rechercher{
+    display: none;
+}
+
+.fa-map-marker-alt{
+    margin-top: 12.5px;
+    font-size: 15px;
+}
+
+.fa-search{
+    margin-top: 12.5px;
+    font-size: 15px;
+    color: white;
+}
+
+
+
+
+/** ASIDE **/
+
+aside div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid #e6e6e6;
+    color: #0065fc;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+aside{
+    display: flex;
+    margin: 10px 20px;
+}
+
+aside p{
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 
@@ -315,104 +474,6 @@ header nav ul li a{
 }
 
 
-/** SECTION ACCEUIL **/
-
-.acceuil{
-    margin: 0 20px 0 20px;
-}
-
-.acceuil p{
-    width:85%;
-    margin:0;
-}
-
-.acceuil h1{
-    font-size: 20px;
-    width: 85%;
-    margin: 0 0 10px 0;
-}
-
-.acceuil h3{
-    margin-right: 20px;
-    font-size: 16px;
-    font-family: raleway_extra_bold;
-}
-
-.filtres{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-button{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    padding: 0px;
-    height: 50px;
-    border: 2px solid #e6e6e6;
-    background-color: white;
-    border-radius: 50px;
-    margin: 0px 10px 10px 0px;
-    font-family: raleway_bold;
-    cursor: pointer;
-}
-
-button:hover{
-    background-color: #e6e6e6;
-}
-
-.rond_bleu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    background-color: #deebff;
-    z-index: 1;
-    margin-left: -2px;
-    color: #0065fc;
-    font-size: 16px;
-}
-
-.texte_filtre{
-    margin: 0px 14px 0px 12px;
-    font-size: 16px;
-}
-
-
-
-
-/** ASIDE **/
-
-aside div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: none;
-
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    border: 1px solid #e6e6e6;
-    color: #0065fc;
-    font-size: 12px;
-    margin-right: 10px;
-}
-
-aside{
-    display: flex;
-    margin: 10px 20px;
-}
-
-aside p{
-    font-size: 14px;
-    margin-top: 5px;
-}
-
-
 
 
 /** FOOTER **/
@@ -450,6 +511,39 @@ footer ul li a{
 
 
 @media (min-width: 640px) {
+
+/** FORMULAIRE [SECTION-ACCEUIL] ~ 640px**/
+input{
+    height: 41px;
+    width: 200px;
+    border: solid 1px #fbfbfb;
+}
+
+.rechercher{
+    display: flex;
+    justify-content: center;
+
+    font-size: 16px;
+    width: 130px;
+    height: 45px;
+    margin: 0;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #0065fc;
+    color: white;
+    border:none;
+}
+
+.fa-map-marker-alt{
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.carre_loupe{
+    display: none;
+}
 
 /**SECTION-1 ~ 640px**/
 #populaires, #hebergements {
@@ -515,6 +609,7 @@ footer ul h3{
 
 
 
+
 @media (min-width: 1024px) {
 
 #populaires figure, #hebergements figure, 
@@ -550,8 +645,8 @@ header nav ul{
 }
 
 header nav ul li{
-    width: 10%;
-    padding: 40px 0;
+    width: 130px;
+    padding: 40px 0px;
     text-align: center;
     border-bottom: none;
     border-top: 3px solid white;
@@ -559,6 +654,7 @@ header nav ul li{
 
 header nav ul li:hover{
     border-top: 3px solid #0065fc;
+    border-bottom: 3px solid white;
 }
 
 header nav ul li a{
@@ -574,11 +670,17 @@ header nav ul li a{
 }
 
 #activites{
-    order: 1;
+    order: 2;
 }
 
-#hebergement_header{
-    order: 2;
+#activites:hover{
+    border-bottom: none;
+}
+
+#hebergements_header{
+    order: 1;
+    border-bottom: none;
+    border-top: 3px solid #0065fc;
 }
 
 /**ACCEUIL ~ 1024px**/
@@ -590,6 +692,8 @@ header nav ul li a{
 .filtres{
     margin-top: 20px;
 }}
+
+
 
 
 @media (min-width: 1280px) {
